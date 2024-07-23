@@ -8,6 +8,7 @@ const HomeMain = () => {
         src="/assets/home-main-bg.webp"
         alt="Close-up view of detergent powder with colorful specks, showcasing the texture and quality of the product."
       />
+      <div className={styles.leftBg}></div>
       <div className={styles.leftColumn}>
         <div className={`center-vertical ${styles.contentHolder}`}>
           <h1 className="white-h1">

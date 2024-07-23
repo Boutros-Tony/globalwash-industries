@@ -51,7 +51,10 @@ const Contact = () => {
           name="keywords"
           content="GlobalWash Industries, Contact us, Detergent solutions, Product inquiry, Customer support, Quality assurance, Global trade partner, Phone, Email"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1 , maximum-scale=1"
+        />
         {/* Structured Data */}
         <script
           type="application/ld+json"
