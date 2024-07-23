@@ -1,0 +1,195 @@
+.contactSection {
+  padding: 10rem 0;
+  .success {
+    color: green;
+  }
+  input:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .radio input[type="radio"] {
+    accent-color: var(--main-orange); /* Change to orange */
+  }
+  .error {
+    color: red;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  h2 {
+    width: 50%;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+  }
+  .textHolder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contactBox {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+    .contactInfo {
+      background-color: var(--main-green);
+      padding: 5rem;
+      width: 45%;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        padding: 2rem 1rem;
+      }
+      .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8rem;
+        @media screen and (max-width: 700px) {
+          margin-top: 3rem;
+        }
+        a {
+          background-color: white;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.8rem;
+          margin-right: 1rem;
+          transition: var(--main-transition);
+          svg {
+            path {
+              transition: var(--main-transition);
+            }
+          }
+          &:hover {
+            background-color: var(--main-orange);
+            svg {
+              path {
+                fill: white;
+              }
+            }
+          }
+        }
+      }
+      ul {
+        list-style-type: none;
+        li {
+          margin: 2rem 0;
+          a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img {
+              margin-right: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .contactForm {
+      background-color: white;
+      flex: 1;
+      transform: translate(-5%, 5%);
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 700px) {
+        transform: translate(0);
+        padding: 2rem 1rem;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        button {
+          align-self: flex-end;
+          margin-top: 8rem;
+          @media screen and (max-width: 700px) {
+            margin-top: 2rem;
+            align-self: flex-start;
+          }
+        }
+        label {
+          font-size: 14px;
+        }
+        input {
+          border: none;
+          border-bottom: 1px solid var(--main-grey);
+          border-radius: 0;
+          font-family: "Onest", sans-serif;
+        }
+        .textArea {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1rem;
+          width: 100%;
+          label {
+            margin-bottom: 1rem;
+          }
+          textarea {
+            border: none;
+            border: 1px solid var(--main-grey);
+            resize: none;
+            border-radius: 0;
+            padding: 1rem;
+            font-family: "Onest", sans-serif;
+          }
+        }
+        .radioHolder {
+          display: flex;
+          flex-direction: row;
+          margin: 1rem 0;
+          @media screen and (max-width: 700px) {
+            flex-direction: column;
+          }
+          .radio {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 0.5rem;
+            @media screen and (max-width: 700px) {
+              margin-bottom: 1rem;
+            }
+            input {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        .doubleInput {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          width: 100%;
+          @media screen and (max-width: 700px) {
+            flex-direction: column;
+            margin-bottom: 0;
+          }
+          .inputHolder {
+            display: flex;
+            width: 48%;
+            flex-direction: column;
+            @media screen and (max-width: 700px) {
+              width: 100%;
+              margin-bottom: 1rem;
+            }
+            label {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

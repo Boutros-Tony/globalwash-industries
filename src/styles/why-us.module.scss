@@ -1,0 +1,131 @@
+.whyUsSection {
+  .whyUsWrapper {
+    background-color: var(--main-green);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 700px) {
+      min-height: auto;
+      padding: 8rem 0;
+    }
+    .whyUsContainer {
+      p {
+        max-width: 70%;
+        @media screen and (max-width: 700px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .whyUsTabWrapper {
+    @media screen and (max-width: 700px) {
+      padding-top: 2rem;
+    }
+    .tabsContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .tabsButtonsHolder {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40%;
+        padding-top: 3rem;
+        .tabsButton {
+          color: var(--main-green);
+          border: none;
+          background-color: transparent;
+          border-bottom: 1px solid var(--main-grey);
+          padding: 1rem 0;
+          width: 100%;
+          text-align: left;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+        .activeTabButton {
+          color: var(--main-orange);
+        }
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+      }
+
+      .dropdownWrapper {
+        display: none;
+        width: 100%;
+        @media screen and (max-width: 700px) {
+          display: block;
+        }
+        .dropdownButton {
+          width: 100%;
+          padding: 1rem;
+          background-color: var(--main-green);
+          color: white;
+          border: none;
+          font-size: 16px;
+          font-family: "Onest", sans-serif;
+          cursor: pointer;
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .dropdownIcon {
+          transition: transform 0.3s ease;
+        }
+        .open {
+          transform: rotate(180deg);
+        }
+        .dropdownMenu {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background-color: var(--main-green);
+          li {
+            padding: 1rem;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              background-color: var(--main-orange);
+            }
+          }
+        }
+      }
+
+      .whyUsTabsHolder {
+        width: 50%;
+        transform: translateY(-10%);
+        .whyUsTab {
+          background-color: white;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          .tabTextHolder {
+            padding: 3rem;
+          }
+          img {
+            max-height: 400px;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .activeTabContent {
+          opacity: 1;
+        }
+        .inactiveTabContent {
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .tabsContainer {
+        flex-direction: column;
+        .whyUsTabsHolder {
+          width: 100%;
+          transform: translate(0);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.aboutSection {
+  padding: 10rem 0;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  @media screen and (max-width: 700px) {
+    padding-top: 10rem;
+  }
+  .globe {
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  h2 {
+    width: 50%;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+  }
+  .textHolder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .columns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 700px) {
+      gap: 2rem;
+    }
+    .column {
+      width: calc(100% / 3 - 3rem);
+      .border {
+        height: 3px;
+        width: 100%;
+        background-color: var(--main-orange);
+        display: flex;
+        margin-bottom: 1rem;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      .column {
+        width: 100%;
+      }
+    }
+  }
+  .valuesColumns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .valuesColumn {
+      width: calc(100% / 3 - 4rem);
+      background-color: white;
+      padding: 3rem;
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      .valuesColumn {
+        width: 100%;
+      }
+    }
+  }
+}
