@@ -1,5 +1,5 @@
 import styles from "./home-about-us.module.scss";
-
+import Link from "next/link";
 const HomeAboutUs = () => {
   return (
     <section className={styles.homeAboutUs}>
@@ -18,7 +18,10 @@ const HomeAboutUs = () => {
             and customer satisfaction, all while <br /> significantly
             streamlining your sourcing process.
           </p>
-          <button className="main-button">Learn More</button>
+
+          <Link className="main-button" href="/about">
+            Learn More
+          </Link>
         </div>
       </div>
     </section>

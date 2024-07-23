@@ -1,5 +1,5 @@
 import styles from "./products-services.module.scss";
-
+import Link from "next/link";
 const ProductsServices = () => {
   return (
     <section className={styles.productsServicesSection}>
@@ -47,7 +47,10 @@ const ProductsServices = () => {
             </p>
           </div>
         </div>
-        <button className="main-button">Learn More</button>
+
+        <Link className="main-button" href="/products-services">
+          Learn More
+        </Link>
       </div>
     </section>
   );

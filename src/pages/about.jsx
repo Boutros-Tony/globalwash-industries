@@ -1,5 +1,5 @@
 import styles from "../styles/about.module.scss";
-import Menu from "../../component/menu/menu.component";
+import Link from "next/link";
 import MenuDark from "../../component/menu-dark/menu.component";
 import Head from "next/head";
 import AboutGetQuote from "../../component/about-get-quote/about-get-quote.component";
@@ -62,8 +62,12 @@ const About = () => {
                 powder.{" "}
               </p>
               <div className="horizontal-buttons">
-                <button className="main-button">Our Values</button>
-                <button className="secondary-button">Contact Us</button>
+                <Link className="main-button" href="/about#values">
+                  Our Values
+                </Link>
+                <Link href="/contact" className="secondary-button">
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>
@@ -132,7 +136,7 @@ const About = () => {
             partner in PSI.
           </p>
           <AboutGetQuote />
-          <h2 className="green-h2">
+          <h2 id="values" className="green-h2">
             Our Values<span>.</span>
           </h2>
 

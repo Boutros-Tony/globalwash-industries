@@ -1,4 +1,5 @@
 import styles from "./about-get-quote.module.scss";
+import Link from "next/link";
 const AboutGetQuote = () => {
   return (
     <div className={`${styles.requestQuoteContainer}`}>
@@ -18,7 +19,10 @@ const AboutGetQuote = () => {
           In sourcing raw materials, we leverage our worldwide network to
           provide the most competitive prices from prime manufacturers.
         </p>
-        <button className="main-button">Get a quote</button>
+
+        <Link className="main-button" href="/contact">
+          Get a quote
+        </Link>
       </div>
     </div>
   );

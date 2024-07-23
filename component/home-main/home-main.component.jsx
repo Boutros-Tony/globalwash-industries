@@ -1,5 +1,5 @@
 import styles from "./home-main.module.scss";
-
+import Link from "next/link";
 const HomeMain = () => {
   return (
     <div className={styles.homeMainWrapper}>
@@ -19,8 +19,12 @@ const HomeMain = () => {
             powder since 2009.
           </p>
           <div className="horizontal-buttons">
-            <button className="main-button">Get a quote</button>
-            <button className="secondary-button">Learn more</button>
+            <Link href="/contact" className="main-button">
+              Get a quote
+            </Link>
+            <Link href="/about" className="secondary-button">
+              Learn more
+            </Link>
           </div>
         </div>
       </div>

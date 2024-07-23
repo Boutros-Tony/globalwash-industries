@@ -1,5 +1,5 @@
 import styles from "./home-why-us.module.scss";
-
+import Link from "next/link";
 const HomeWhyUs = () => {
   return (
     <section className={styles.whyUsSection}>
@@ -16,7 +16,10 @@ const HomeWhyUs = () => {
           partner in growth and innovation today, and together, we can build a
           successful future.
         </p>
-        <button className="main-button">Learn More</button>
+
+        <Link href="why-us" className="main-button">
+          Learn More
+        </Link>
       </div>
     </section>
   );

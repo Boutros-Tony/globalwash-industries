@@ -1,6 +1,9 @@
 .getAQuote {
   background-color: var(--main-green);
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .getSection {
   padding: 5rem 0;

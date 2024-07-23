@@ -1,5 +1,5 @@
 import styles from "./get-a-quote.module.scss";
-
+import Link from "next/link";
 const GetAQuote = () => {
   return (
     <section className={styles.getSection}>
@@ -10,7 +10,10 @@ const GetAQuote = () => {
           Contact us today for a quote and let’s build a successful future
           together.
         </p>
-        <button className="main-button">Get a quote</button>
+
+        <Link className="main-button" href="/contact">
+          Get a quote
+        </Link>
       </div>
     </section>
   );
