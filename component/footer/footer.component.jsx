@@ -49,7 +49,6 @@ const Footer = () => {
           <span>© 2024 GlobalWash Industries</span>
           <div>
             <Link href="/">Privacy Policy</Link>
-            <Link href="/"> • Terms of Service</Link>
           </div>
           <Link href="https://www.livbrid.com">Site by LIVBRID</Link>
         </div>

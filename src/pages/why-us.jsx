@@ -83,7 +83,7 @@ const WhyUs = () => {
             "@type": "Organization",
             "name": "GlobalWash Industries",
             "url": "http://www.globalwashindustries.com",
-            "logo": "http://www.globalwashindustries.com/logo.png",
+            "logo": "http://www.globalwashindustries.com/white-logo.svg",
             "description": "Discover why GlobalWash Industries is the ideal partner for your business. We offer unwavering quality assurance, adaptability, strong sourcing capabilities, and transparent business practices.",
             "contactPoint": {
               "@type": "ContactPoint",

@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
     .bannerContainer {
       z-index: 2;
       position: relative;
@@ -62,6 +63,9 @@
     overflow: visible;
     transform: translateY(-5%);
     position: relative;
+    @media screen and (max-width: 700px) {
+      padding-bottom: 0;
+    }
     .contentContainer {
       position: relative;
       padding: 0;

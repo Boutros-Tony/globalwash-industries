@@ -62,7 +62,7 @@ const Contact = () => {
             "@type": "Organization",
             "name": "GlobalWash Industries",
             "url": "http://www.globalwashindustries.com",
-            "logo": "http://www.globalwashindustries.com/logo.png",
+            "logo": "http://www.globalwashindustries.com/white-logo.svg",
             "description": "Contact GlobalWash Industries to discuss your needs and discover how we can assist you. Whether it's a query about our products or a request for support, we're here to help.",
             "contactPoint": {
               "@type": "ContactPoint",

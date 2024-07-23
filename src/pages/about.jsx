@@ -29,7 +29,7 @@ const About = () => {
             "@type": "Organization",
             "name": "GlobalWash Industries",
             "url": "http://www.globalwashindustries.com",
-            "logo": "http://www.globalwashindustries.com/logo.png",
+            "logo": "http://www.globalwashindustries.com/white-logo.svg",
             "description": "GlobalWash Industries is a globally recognized provider of superior quality detergent laundry powders and raw materials for manufacturing laundry powder since 2009.",
             "contactPoint": {
               "@type": "ContactPoint",

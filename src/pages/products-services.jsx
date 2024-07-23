@@ -34,7 +34,7 @@ const ProductsServices = () => {
             "@type": "Organization",
             "name": "GlobalWash Industries",
             "url": "http://www.globalwashindustries.com",
-            "logo": "http://www.globalwashindustries.com/logo.png",
+            "logo": "http://www.globalwashindustries.com/white-logo.svg",
             "description": "Explore GlobalWash Industries' high-quality detergent solutions and comprehensive support. From tailored detergent powders and essential raw materials to dedicated OEM and logistic services.",
             "contactPoint": {
               "@type": "ContactPoint",

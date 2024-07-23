@@ -37,7 +37,7 @@ export default function Home() {
             "@type": "Organization",
             "name": "GlobalWash Industries",
             "url": "http://www.globalwashindustries.com",
-            "logo": "http://www.globalwashindustries.com/logo.png",
+            "logo": "http://www.globalwashindustries.com/white-logo.svg",
             "description": "GlobalWash Industries is a leading global provider of detergent laundry powder and raw materials for manufacturing laundry powder since 2009.",
             "contactPoint": {
               "@type": "ContactPoint",

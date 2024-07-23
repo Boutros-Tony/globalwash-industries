@@ -41,7 +41,7 @@ const OpticalBrighteners = () => {
             "manufacturer": {
               "@type": "Organization",
               "name": "GlobalWash Industries",
-              "logo": "http://www.globalwashindustries.com/logo.png",
+              "logo": "http://www.globalwashindustries.com/white-logo.svg",
               "url": "http://www.globalwashindustries.com"
             },
             "contactPoint": {
